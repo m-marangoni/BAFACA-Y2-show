@@ -14,21 +14,27 @@ body {
   height: 100vh;
 }
 
-p{
+.text-container{
+  width:100vw;
+}
+
+span{
   z-index: 10;
-  /* display: flex; */
   color: aliceblue;
   position: absolute;
-  margin: 0 auto ;
+  margin: 0 2% ;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: stretch;
   vertical-align: middle;
-  font-size: 18em;
+  font-size: 12rem;
   pointer-events: none;
   font-family: "notorious";
+  width: fit-content;
+block-size: fit-content;
+max-width: 100%;
 }
 
 .top{

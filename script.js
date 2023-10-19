@@ -102,6 +102,7 @@
 
 var scene, camera, renderer, controls;
 var cubes = [];
+var tinycubes = [];
 var model, model2;
 var video, videoTexture;
 var plane;
@@ -182,18 +183,33 @@ function createCube(position, link, texturePath, tooltipText) {
 
 }
 
+function createTinyCube(position, texturePath) {
+  var texture = new THREE.TextureLoader().load(texturePath);
+  var cubeGeometry = new THREE.BoxGeometry(0.2, 0.2, 0.2);
+  var cubeMaterial = new THREE.MeshStandardMaterial({
+    map: texture
+  })
+    var tinycube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+  tinycube.position.set(position.x, position.y, position.z);
+  tinycubes.push({ tinycube });
+  scene.add(tinycube);
+}
+
 createCube({ x: -2, y: 0, z: 0 },"https://phoenixkea.github.io/phoenixswebpage/", 'phoenix.png', "Phoenix Kea" );
 createCube({ x: 2, y: 0, z: 0 }, "innards.html", 'full_teeth.jpg', "INNARDS - Vaughn Valentine");
-createCube({ x: -3, y: 0, z: 2 }, "https://cynthiaolubodun.github.io/New-sabi-world", 'girl.jpg', "NEW SABI WORLD - Cynthia Olubodun");
+createCube({ x: -3, y: 0, z: 2 }, "https://cynthiaolubodun.github.io/New-sabi-world", 'girl.jpg', "SABI WORLD - Cynthia Olubodun");
 createCube({ x: 3, y: 0, z: 2 }, "new.html", 'flower.png', "NEW LOGOS ORDER - Chihiro Tateno");
 createCube({ x: -3, y: 0, z: -2 }, "https://aidanthomasual.github.io/Rot/", 'rot.jpg', "ROT - Aidan Thomas");
 // createCube({ x: 3, y: 0, z: -2 }, "https://example.com/link6", 'texture6.jpg', "Adam");
-createCube({ x: -2, y: 0, z: 4 },  "https://melissayunzhi.github.io/U5test/posedetect.html", 'cells.png', "Yunzhi Li (Melissa)");
+createCube({ x: -2, y: 0, z: 4 },  "https://melissayunzhi.github.io/U5test/posedetect.html", 'orange.jpg', "Yunzhi Li (Melissa)");
 createCube({ x: 2, y: 0, z: 4 }, "https://ae023.github.io/Erin/", '3.png', "Erin Anderson Doherty" );
 createCube({ x: -1, y: 0, z: -1 }, "https://lost-in-translation-theta.vercel.app/", 'translation.png', "LOST IN TRANSLATION - Rizq Yazed");
 createCube({ x: 2, y: 0, z: -4 }, "wang.html", './image/hand.png', "I would like to be a BLACKBIRD - Wangshu Zhou");
 
-
+createTinyCube({ x: -1.8, y: 0, z: 4.2 },  'orange.jpg');
+createTinyCube({ x: -2.2, y: 0.2, z: 3.8 } ,'orange.jpg');
+createTinyCube({ x: -1.7, y: -0.2, z: 3.8 } ,'orange.jpg');
+createTinyCube({ x: -2.0, y: 0.4, z: 3.8 } ,'orange.jpg');
 
 // Create a tooltip element
 var tooltipElement = document.createElement('div');
@@ -268,7 +284,7 @@ function onDocumentMouseOver(event) {
       cubes.forEach((c) => {
         c.cube.userData.emissiveOn = false;
         hideTooltip();
-
+        $('html,body').css('cursor', 'default');
         c.cube.material.emissiveIntensity = 0.0; // Adjust emissive intensity as needed
       });  } else {
         $('html,body').css('cursor', 'default');
