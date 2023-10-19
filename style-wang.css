@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'GreatVibes';
+  src: url('./GreatVibes-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CrimsonText';
+  src: url('./CrimsonText-Regular.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  color: #333;
+}
+
+.shadow-text {
+  color: #fff;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.rl-text {
+  position: absolute;
+  writing-mode: vertical-lr;
+  text-wrap: nowrap;
+}
+
+.page {
+  margin: 0 auto;
+  padding-top: 16px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  border: 1px solid red;
+  padding: 12px;
+  width: 47%;
+}
+
+.innerborder {
+  border: 1px solid rgb(255, 136, 136);
+  height: 771px;
+  position: relative;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 8px;
+  font-family: CrimsonText;
+}
+
+.top-line {
+  width: 350px;
+  height: 1px;
+  background: red;
+  margin: 48px auto 0;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  flex-wrap: wrap;
+  margin: 150px auto 0;
+  font-family: GreatVibes;
+}
+
+.btn {
+  width: 48%;
+  margin: 16px 0;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  color: rgb(234, 18, 15);
+}
+
+.hand {
+  text-align: right;
+  margin: 150px 50px 0 0;
+}
+
+.hand img {
+  width: 120px;
+}
+
+.bottom-line {
+  position: absolute;
+  width: 150px;
+  height: 1px;
+  background: red;
+  left: 200px;
+  bottom: 32px;
+}
+
+.side-text {
+  position: absolute;
+  left: 32px;
+  top: 260px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 24px;
+}
+
+.display {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.cover {
+  padding: 80px 0 0 0;
+  text-align: center;
+}
+
+.cover img {
+  height: 344px;
+  margin-bottom: 40px;
+}
+
+.cover p {
+  font-size: 12px;
+}
+
+.page-content {
+  position: relative;
+}
+
+.close-eye {
+  border-radius: 50%;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 60px;
+}

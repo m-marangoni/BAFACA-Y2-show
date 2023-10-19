@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "notorious";
+  src: url('super_notorious_v2.otf');
+}
+
+
+
+html {
+  overflow: hidden;
+  background: #000;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+p{
+  z-index: 10;
+  /* display: flex; */
+  color: aliceblue;
+  position: absolute;
+  margin: 0 auto ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: stretch;
+  vertical-align: middle;
+  font-size: 18em;
+  pointer-events: none;
+  font-family: "notorious";
+}
+
+.top{
+  top:0;
+  letter-spacing: 0.23em;
+
+}
+
+.bottom{
+  bottom: 0;
+  align-items: center;
+  align-content: center;
+  justify-content: stretch;
+  vertical-align: middle;
+  letter-spacing: 0.4em;
+
+}
+
+
+canvas {
+  /* display: block; */
+  position: absolute;
+
+}
+
+#tooltip {
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.501);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  display: none;
+  font-size: 1.2rem; /* Adjust the font size as needed */
+}
+
+
+iframe{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  vertical-align: middle;
+  z-index: 1000;
+  width: 50vw;
+  height: 100vh;
+  pointer-events: none;
+  mix-blend-mode:luminosity;
+
+  opacity: 30%;
+}
