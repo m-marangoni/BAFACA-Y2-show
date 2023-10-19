@@ -190,7 +190,7 @@ createCube({ x: -3, y: 0, z: -2 }, "https://aidanthomasual.github.io/Rot/", 'rot
 // createCube({ x: 3, y: 0, z: -2 }, "https://example.com/link6", 'texture6.jpg', "Adam");
 createCube({ x: -2, y: 0, z: 4 },  "https://melissayunzhi.github.io/U5test/posedetect.html", 'cells.png', "Yunzhi Li (Melissa)");
 createCube({ x: 2, y: 0, z: 4 }, "https://ae023.github.io/Erin/", '3.png', "Erin Anderson Doherty" );
-createCube({ x: -1, y: 0, z: -1 }, "https://example.com/link9", 'texture9.jpg', "Rizq Yazed");
+createCube({ x: -1, y: 0, z: -1 }, "https://lost-in-translation-theta.vercel.app/", 'translation.png', "LOST IN TRANSLATION - Rizq Yazed");
 createCube({ x: 2, y: 0, z: -4 }, "wang.html", './image/hand.png', "I would like to be a BLACKBIRD - Wangshu Zhou");
 
 
