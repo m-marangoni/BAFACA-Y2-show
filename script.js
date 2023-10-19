@@ -195,14 +195,14 @@ function createTinyCube(position, texturePath) {
   scene.add(tinycube);
 }
 
-createCube({ x: -2, y: 0, z: 0 },"https://phoenixkea.github.io/phoenixswebpage/", 'phoenix.png', "Phoenix Kea" );
+createCube({ x: -2, y: 0, z: 0 },"https://phoenixkea.github.io/phoenixswebpage/", 'phoenix.png', " 'pov: I’m still 14,, get me off tumblr!!!' - Phoenix Kea" );
 createCube({ x: 2, y: 0, z: 0 }, "innards.html", 'full_teeth.jpg', "INNARDS - Vaughn Valentine");
 createCube({ x: -3, y: 0, z: 2 }, "https://cynthiaolubodun.github.io/New-sabi-world", 'girl.jpg', "SABI WORLD - Cynthia Olubodun");
 createCube({ x: 3, y: 0, z: 2 }, "new.html", 'flower.png', "NEW LOGOS ORDER - Chihiro Tateno");
-createCube({ x: -3, y: 0, z: -2 }, "https://aidanthomasual.github.io/Rot/", 'rot.jpg', "ROT - Aidan Thomas");
-// createCube({ x: 3, y: 0, z: -2 }, "https://example.com/link6", 'texture6.jpg', "Adam");
+createCube({ x: -3, y: 0, z: -2 }, "https://aidanthomasual.github.io/Rot/", 'aidan.jpg', "ROT - Aidan Thomas");
+createCube({ x: 3, y: 0, z: -2 }, "https://example.com/link6", 'texture6.jpg', "Adam ");
 createCube({ x: -2, y: 0, z: 4 },  "https://melissayunzhi.github.io/U5test/posedetect.html", 'orange.jpg', "Yunzhi Li (Melissa)");
-createCube({ x: 2, y: 0, z: 4 }, "https://ae023.github.io/Erin/", '3.png', "Erin Anderson Doherty" );
+createCube({ x: 2, y: 0, z: 4 }, "https://ae023.github.io/Erin/", 'erin.png', "A BEAUTIFUL DREAM - Erin Anderson" );
 createCube({ x: -1, y: 0, z: -1 }, "https://lost-in-translation-theta.vercel.app/", 'translation.png', "LOST IN TRANSLATION - Rizq Yazed");
 createCube({ x: 2, y: 0, z: -4 }, "wang.html", './image/hand.png', "I would like to be a BLACKBIRD - Wangshu Zhou");
 
